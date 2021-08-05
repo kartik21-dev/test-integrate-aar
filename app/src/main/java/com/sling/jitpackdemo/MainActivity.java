@@ -21,13 +21,12 @@ import com.sling.circularviewsdk.*;
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { showimage(context); }
+            public void onClick(View view) { showimage(); }
         });
     }
 
-    private void showimage(Context context) {
-       Intent i = new Intent(context,MainActivity_sdk.class);
-       startActivity(i);
+    private void showimage() {
+        Images.createIntent(MainActivity.this);
     }
 
 }

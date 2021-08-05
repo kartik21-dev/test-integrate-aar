@@ -6,9 +6,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
 import com.squareup.picasso.Picasso;
-
 import de.hdodenhof.circleimageview.CircleImageView;
 
 
@@ -29,7 +27,7 @@ public class MainActivity_sdk extends AppCompatActivity {
         });
     }
 
-    public void callimage( ) {
+    public void callimage() {
         String str = "https://source.unsplash.com/random";
         CircleImageView circleImageView = findViewById(R.id.profile_image1);
         Picasso.get().load(str).into(circleImageView);
