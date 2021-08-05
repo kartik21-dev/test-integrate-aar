@@ -7,18 +7,31 @@
     android:id="@+id/layoutid"
     tools:context=".MainActivity_sdk">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image1"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:layout_marginEnd="171dp"
-        android:layout_marginBottom="397dp"
-        android:foregroundGravity="center"
-        android:src="@drawable/ic_launcher_background"
-        app:civ_border_color="#FF000000"
-        app:civ_border_width="2dp" />
+ <FrameLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/frameid">
+
+  <Button
+      android:layout_gravity="center"
+      android:id="@+id/bid"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Button" />
+ </FrameLayout>
+
+ <de.hdodenhof.circleimageview.CircleImageView
+     android:id="@+id/profile_image1"
+     android:layout_width="96dp"
+     android:layout_height="96dp"
+     android:layout_alignParentEnd="true"
+     android:layout_alignParentBottom="true"
+     android:layout_gravity="center"
+     android:layout_marginEnd="171dp"
+     android:layout_marginBottom="397dp"
+     android:foregroundGravity="center"
+     android:src="@drawable/ic_launcher_background"
+     app:civ_border_color="#FF000000"
+     app:civ_border_width="2dp" />
 
 </RelativeLayout>
