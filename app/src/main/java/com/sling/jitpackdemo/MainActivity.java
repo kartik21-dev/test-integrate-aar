@@ -8,8 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import com.sling.circularviewsdk.*;
+import com.sling.event.BotStatusListener;
 
- public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements BotStatusListener {
 
      Context context;
 
@@ -29,4 +30,13 @@ import com.sling.circularviewsdk.*;
         Images.createIntent(MainActivity.this);
     }
 
+    @Override
+    public void onBotStartEvents(Context context) {
+
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
+    }
 }
